@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/getstartedwallpaper"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/salaryInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/salaryInfoText"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:id="@+id/inputBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/salaryInfoTextView"
+        android:layout_centerHorizontal="true"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp" />
+    
+    <TextView
+        android:id="@+id/currencyInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/currencyInfoText"
+        android:layout_below="@id/inputBalance"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF" />
+
+    <Spinner
+        android:id="@+id/spinner_currencies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/currencies_items"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@id/currencyInfoTextView"/>
+    
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_currencies"
+        android:text="@string/getStartedEndButton" 
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttontouching"
+        android:textColor="#FFFFFF"/>
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Daily Expenses</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_get_started">GetStartedActivity</string>
+    <string name="title_activity_charts">ChartsActivity</string>
+    <string name="welcomeText">Welcome to Daily Expenses! A money- management system that tracks your spending</string>
+    <string name="getStartedText">Get Started</string>
+    <string name="invalidInputGetStartedInit">Invalid fields!</string>
+    <string name="inputSalary">Input balance</string>
+    <string name="salaryInfoText">Input your current balance</string>
+    <string name="currencyInfoText">Currency</string>
+    <string name="getStartedEndButton">OK</string>
+    <string name="balance">Balance</string>
+    <string name="amountTextView">Amount</string>
+    <string name="enterAmount">Enter Amount</string>
+    <string name="dateTextView">Date</string>
+    <string name="typeTextView">Type</string>
+    <string name="categoryTextView">Category</string>
+    <string name="currencyTextView">Currency</string>
+    <string name="descriptionTextView">Info</string>
+    <string name="enterDescription">Enter Description</string>
+    <string name="incomeText">Income</string>
+    <string name="expenseText">Expense</string>
+    <string name="doneText">Done</string>
+    <string name="plusSymbol">+</string>
+    <string name="historyAmount">Amount</string>
+    <string name="historyCategory">Category</string>
+    <string name="historyDate">Date</string>
+    <string name="wishlistName">Name</string>
+    <string name="wishlistAmount">Amount</string>
+    <string name="addWish">Add A New Wish</string>
+    <string name="newWish">New Wish</string>
+    <string name="newWishName">Wish Name</string>
+    <string name="newWishAmount">Wish Price</string>
+    <string name="addNewTextTab">Add New</string>
+
+    <string name="wishlistTextTab">Wishlist</string>
+    <string name="chartsTextTab">Charts</string>
+    <string name="historyTextTab">History</string>
+    <string name="settingsTextTab">Settings</string>
+
+    <string name="editButtonText">Edit</string>
+    <string name="deleteButtonText">Delete</string>
+    <string name="editWish">Edit Wish</string>
+
+    <string name="addNewCategoryDialogDescription">New Category</string>
+    
+    <string name="addNewCategorySave">Add</string>
+    <string name="addNewCategoryCancel">Cancel</string>
+    <string name="categoryName">Category name</string>
+    <string name="addNewWishSave">Add</string>
+    <string name="addNewWishCancel">Cancel</string>
+     <string name="pieChartDataInfoText">No data</string>
+      
+     <string name="openBar">Open</string>
+     <string name="closedBar">Closed</string>
+
+    
+	<string-array name="settings_items">
+	<item>Main settings</item>
+	<item>Add New Category</item>
+	<item>Other</item>
+	<item>Reset History</item>
+	</string-array>
+	
+	<string-array name="currencies_items">
+	<item>BGN</item>
+	<item>US Dollar</item>
+	<item>Euro</item>
+	</string-array>
+	
+	<string-array name="chart_type_items">
+	<item>Spent Monies By Category</item>
+	<item>Balance Tracking</item>
+	</string-array>
+	
+</resources>

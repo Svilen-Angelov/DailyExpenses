@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/blueBG"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00D5ED" >
+
+        <TextView
+            android:id="@+id/wishDialogTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="@string/newWish"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/newWishNameEditText"
+        style="@style/colorBlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blueBG"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/newWishName"
+        android:inputType="textNoSuggestions" />
+
+    <EditText
+        android:id="@+id/newWishAmountEditText"
+        style="@style/colorBlackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newWishNameEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/newWishAmount"
+        android:inputType="numberDecimal|textNoSuggestions" />
+
+    <RatingBar
+        android:id="@+id/newWishRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newWishAmountEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:numStars="5"
+        android:rating="3"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><!-- for dark theme Theme.Holo  -->
+    <style name="Theme.TranslucentActionBar" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
+    </style>
+
+    <style name="Theme.TranslucentActionBar.ActionBar" />
+
+    <style name="Theme.TranslucentActionBar.ActionBar.Overlay">
+        <item name="android:actionBarStyle">@style/Widget.ActionBar.Transparent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+     <style name="Theme.TranslucentActionBarNoActionBar" parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
+    </style>
+
+    <style name="Theme.TranslucentActionBarNoActionBar.ActionBar" />
+
+    <style name="Theme.TranslucentActionBarNoActionBar.ActionBar.Overlay">
+        <item name="android:actionBarStyle">@style/Widget.ActionBar.Transparent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    
+</resources>

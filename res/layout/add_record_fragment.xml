@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#00ffffff">
+
+	    <TextView
+	        android:id="@+id/tabTextAddNew"
+	        style="@style/colorWhiteText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginTop="55dp"
+	        android:layout_marginBottom="10dp"
+	        android:text="@string/addNewTextTab"
+	        android:textSize="48sp" />
+	    
+	    <View android:id="@+id/whiteLine"
+	        android:layout_width="fill_parent"
+	         android:layout_height="1dp"
+	         android:background="#FFFFFF"
+	         android:layout_below="@id/tabTextAddNew" />
+
+	    <RelativeLayout
+	        android:id="@+id/mainContentAddNew"
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@id/tabTextAddNew"
+	        android:layout_marginTop="30dp">
+	        
+					<TextView
+				        android:id="@+id/amountTextView"
+				        style="@style/colorWhiteText"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginBottom="15dp"
+				        android:layout_marginTop="10dp"
+				        android:layout_marginLeft="25dp"
+				        android:text="@string/amountTextView"
+				        android:textSize="22sp" />
+				
+				    <EditText
+				        android:id="@+id/editTextAmount"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_alignBottom="@id/amountTextView"
+				        android:layout_marginLeft="40dp"
+				        android:layout_marginRight="25dp"
+				        android:layout_toRightOf="@id/amountTextView"
+				        android:hint="@string/enterAmount"
+				        android:inputType="numberDecimal"
+				        android:maxLength="6"
+				        android:textColor="#FFFFFF"
+				        android:textColorHint="#FFFFFF"
+				        android:textSize="22sp" />
+				
+				    <TextView
+				        android:id="@+id/dateTextView"
+				        style="@style/colorWhiteText"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignLeft="@id/amountTextView"
+				        android:layout_below="@id/amountTextView"
+				        android:layout_marginBottom="15dp"
+				        android:layout_marginTop="15dp"
+				        android:text="@string/dateTextView"
+				        android:textSize="22sp" />
+				
+				    <EditText
+				        android:id="@+id/dateText"
+				        style="@style/colorBlackText"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_alignBottom="@id/dateTextView"
+				        android:layout_alignLeft="@+id/editTextAmount"
+				        android:layout_marginRight="20dp"
+				        android:inputType="text"
+				        android:textColor="#FFFFFF"
+				        android:textSize="22sp" />
+				
+				    <TextView
+				        android:id="@+id/typeTextView"
+				        style="@style/colorWhiteText"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignLeft="@id/amountTextView"
+				        android:layout_below="@id/dateTextView"
+				        android:layout_marginBottom="15dp"
+				        android:layout_marginTop="15dp"
+				        android:text="@string/typeTextView"
+				        android:textSize="22sp" />
+				
+				    <RelativeLayout
+				        android:id="@+id/radioButtonFrame"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignLeft="@id/editTextAmount"
+				        android:layout_alignBottom="@id/typeTextView" >
+				
+				        <RadioGroup
+				            android:id="@+id/radioGroup"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_centerVertical="true"
+				            android:gravity="center"
+				            android:orientation="horizontal"  >
+				
+				            <RadioButton
+				                android:id="@+id/radiobutton_income"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:text="@string/incomeText"
+				                android:textColor="#FFFFFF"
+				                android:textSize="22sp" />
+				
+				            <RadioButton
+				                android:id="@+id/radiobutton_expenses"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:checked="true"
+				                android:text="@string/expenseText"
+				                android:textColor="#FFFFFF"
+				                android:textSize="22sp" />
+				            
+				        </RadioGroup>
+				    </RelativeLayout>
+				
+				    <TextView
+				        android:id="@+id/categoryTextView"
+				        style="@style/colorWhiteText"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_alignLeft="@id/amountTextView"
+				        android:layout_below="@id/typeTextView"
+				        android:layout_marginBottom="15dp"
+				        android:layout_marginTop="15dp"
+				        android:text="@string/categoryTextView"
+				        android:textSize="22sp" />
+				
+				    <RelativeLayout
+				        android:id="@+id/spinnerButtonFrame"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignLeft="@id/editTextAmount"
+				        android:layout_alignBottom="@id/categoryTextView" >
+				
+				        
+				        <Spinner
+				            android:id="@+id/spinner_categories"
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:layout_centerVertical="true"
+				            android:layout_marginRight="20dp"
+				            android:popupBackground="#ee13d3cc"
+				            android:backgroundTintMode="screen" />
+				        
+				    </RelativeLayout>
+				
+				    <TextView
+				        android:id="@+id/currencyTextView"
+				        style="@style/colorWhiteText"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignLeft="@id/amountTextView"
+				        android:layout_below="@id/categoryTextView"
+				        android:layout_marginBottom="15dp"
+				        android:layout_marginTop="15dp"
+				        android:text="@string/currencyInfoText"
+				        android:textSize="22sp" />
+				
+				    <RelativeLayout
+				        android:id="@+id/currencyButtonFrame"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignLeft="@id/editTextAmount"
+				        android:layout_alignBottom="@id/currencyTextView" >
+				
+				        <Spinner
+				            android:id="@+id/currency_categories"
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:layout_centerVertical="true"
+				            android:layout_marginRight="20dp"
+				            android:entries="@array/currencies_items"
+				            android:popupBackground="#ee13d3cc"
+				            
+				            />
+				    </RelativeLayout>
+				
+				    <TextView
+				        android:id="@+id/descriptionTextView"
+				        style="@style/colorWhiteText"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignLeft="@id/amountTextView"
+				        android:layout_below="@id/currencyTextView"
+				        android:layout_marginBottom="15dp"
+				        android:layout_marginTop="15dp"
+				        android:text="@string/descriptionTextView"
+				        android:textSize="22sp" />
+				
+				    <EditText
+				        android:id="@+id/editTextDescription"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_alignBottom="@id/descriptionTextView"
+				        android:layout_alignLeft="@id/editTextAmount"
+				        android:layout_marginRight="20dp"
+				        android:hint="@string/enterDescription"
+				        android:inputType="text|textNoSuggestions"
+				        android:maxLength="30"
+				        android:textSize="22sp"
+				        android:textColor="#FFFFFF"
+				        android:textColorHint="#FFFFFF" />
+				    
+				    <Button
+				        android:id="@+id/button_done"
+				        style="@style/colorWhiteText"
+				        android:layout_width="60dp"
+				        android:layout_height="60dp"
+				        android:layout_alignParentBottom="true"
+				        android:layout_centerHorizontal="true"
+				        android:layout_marginBottom="30dp"
+				        android:background="@drawable/buttontouchingblue"
+				        android:paddingBottom="2dp"
+				        android:text="@string/doneText" />
+				        
+				        
+   </RelativeLayout>
+
+    
+</RelativeLayout>

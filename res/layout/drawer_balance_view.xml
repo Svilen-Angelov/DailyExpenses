@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#282828" >
+    
+    <TextView android:id="@+id/balance_text"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/balance"
+	    android:textSize="23sp"
+	    android:textColor="#00D5ED"
+	    android:layout_alignParentLeft="true"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    android:layout_centerVertical="true"
+	    android:paddingLeft="10dp"/>
+    
+	<TextView 
+	    android:id="@+id/current_balance"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="23sp"
+	    android:layout_alignParentRight="true"
+	    android:paddingRight="10dp"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    android:layout_centerVertical="true"/>
+	
+	<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#111111"
+    android:layout_alignParentBottom="true"/>
+</RelativeLayout>

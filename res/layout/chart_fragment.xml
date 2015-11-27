@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tabTextChart"
+        style="@style/colorWhiteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="55dp"
+        android:text="@string/chartsTextTab"
+        android:textSize="48sp" />
+
+    <View
+        android:id="@+id/whiteLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tabTextChart"
+        android:background="#FFFFFF" />
+
+    <Spinner
+        android:id="@+id/spinner_chartTypes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/tabTextChart"
+        android:entries="@array/chart_type_items"
+        android:popupBackground="#ee13d3cc" />
+
+    <FrameLayout
+        android:id="@+id/fragmentPlace"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/spinner_chartTypes" >
+    </FrameLayout>
+
+</RelativeLayout>

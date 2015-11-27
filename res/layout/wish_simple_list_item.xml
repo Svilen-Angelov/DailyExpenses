@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:longClickable="true" >
+
+    <TextView
+        android:id="@+id/wishlist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/wishlistName"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/wishlist_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:paddingRight="7dp"
+        android:text="@string/wishlistAmount"
+        android:textSize="18sp" />
+
+    <RatingBar
+        android:id="@+id/wishlist_rating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/wishlist_name"
+        android:layout_marginLeft="10dp"
+        android:numStars="5"
+        android:rating="4"
+        android:isIndicator="true"
+        android:scaleX="1.1"
+  		android:scaleY="1.1" />
+
+</RelativeLayout>
